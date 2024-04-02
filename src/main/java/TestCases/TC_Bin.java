@@ -19,6 +19,10 @@ public class TC_Bin {
     public static void updateCrossValue (String valueCross) throws Exception {
         String cross = getString(VALUE_CROSS);
         if (Integer.valueOf(valueCross) == Integer.valueOf(valueCross)){
+            System.out.println("Value Right");
+        }
+        else {
+            click(VALUE_CROSS);
 
         }
 
