@@ -1,4 +1,6 @@
-LoginInsideTestpackage Browser;
+package Browser;
+
+//LoginInsideTestpackage Browser;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,7 +11,7 @@ import java.time.Duration;
 import java.util.Arrays;
 
 public class AccessBin {
-    public static WebDriver loginInsideTest (String url) throws InterruptedException{
+    public static WebDriver loginBin (String url) throws InterruptedException{
         WebDriver driver;
         System.out.println("Launching Chrome browser ...");
 //        selenium-java ver < 4.5 sử dụng command

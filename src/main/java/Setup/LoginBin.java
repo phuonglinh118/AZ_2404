@@ -10,12 +10,12 @@ import static BaseSetup.LocalDriverManager.setWebDriver;
 import static Method.Methods.takeScreenShot;
 import static Testcases.TcInsideTest.inputInfoAndPressLogin;
 
-public class LoginInsideTest {
+public class LoginBin {
 
   //  public static WebDriver driver;
     @BeforeMethod
-    public void loginPageInside () throws Exception{
-        String url = "https://accounts.binance.com/en/login?loginChannel=&return_to=aHR0cHM6Ly93d3cuYmluYW5jZS5jb20vZW4vbXkvZGFzaGJvYXJk";
+    public void loginPageBin() throws Exception{
+        String url = "https://accounts.binance.com/en/login";
         String user = "linhntp@hasaki.vn"; //linhntp@hasaki.vn //admintest1@hsk.vn //shop176@hasaki.vn //shop555@hasaki.vn //dailtt@hasaki.vn //nhungdnh //ngocy // cashier71@hasaki.vn
         String pass = "hsk123"; //hsk123 // 123456
         setWebDriver(AccessInsideTest.loginInsideTest(url));
