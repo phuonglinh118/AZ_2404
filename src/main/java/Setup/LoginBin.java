@@ -1,14 +1,15 @@
 package Setup;
 
 import BaseSetup.LocalDriverManager;
-import Browser.AccessInsideTest;
+import Browser.AccessBin;
+import Browser.AccessBin.*;
 import Helper.Log;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 
 import static BaseSetup.LocalDriverManager.setWebDriver;
 import static Method.Methods.takeScreenShot;
-import static Testcases.TcInsideTest.inputInfoAndPressLogin;
+import static TestCases.TC_Bin.*;
 
 public class LoginBin {
 
@@ -16,11 +17,9 @@ public class LoginBin {
     @BeforeMethod
     public void loginPageBin() throws Exception{
         String url = "https://accounts.binance.com/en/login";
-        String user = "linhntp@hasaki.vn"; //linhntp@hasaki.vn //admintest1@hsk.vn //shop176@hasaki.vn //shop555@hasaki.vn //dailtt@hasaki.vn //nhungdnh //ngocy // cashier71@hasaki.vn
-        String pass = "hsk123"; //hsk123 // 123456
-        setWebDriver(AccessInsideTest.loginInsideTest(url));
+        setWebDriver(AccessBin.loginBin(url));
         Thread.sleep(2000);
-        inputInfoAndPressLogin(user, pass);
+
     }
     @AfterMethod
     public void closeChromeBrowser (ITestResult result) throws Exception {

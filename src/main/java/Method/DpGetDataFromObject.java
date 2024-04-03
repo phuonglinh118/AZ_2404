@@ -1,4 +1,5 @@
 package Method;
+import org.testng.annotations.DataProvider;
 
 public class DpGetDataFromObject {
     @DataProvider (name = "listSkuReceipt",parallel = true)
